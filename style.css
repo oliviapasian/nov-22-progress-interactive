@@ -1,0 +1,255 @@
+html {
+  overflow: hidden;
+}
+/*  
+.div1 {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  z-index: -1;
+}*/
+.grid{
+  padding: 10px;
+}
+
+body {
+  background: #f1ffda;
+  padding: 10px;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+/*   font-family:  belda-extended, Georgia, sans-serif;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+    font-family: birra-pils, Arial, sans-serif;
+  font-family: bilo, Verdana, sans-serif;
+*/
+/* Introduction */
+.introduction {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: #75d17f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction h1 {
+  font-size: 7vw; 
+  color: #f3ff74;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif; 
+  font-weight: 900;
+  margin: 0;
+}
+
+.introduction p {
+  padding-bottom: 30px;
+  font-size: 2.5vw;
+  color: #f3ff74;
+  font-family: bilo, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  width: 70vw;
+  text-align: center;
+}
+
+.introduction button {
+  background: none;
+  border: none;
+  background: #f3ff74;
+  color: #75d17f;
+  padding: 20px;
+  border-radius: 0px;
+  font-size: 30px;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.introduction button:hover {
+  background: #ffcc4c;
+}
+
+/* Paint palette */
+.palette-image{
+  width: 263px;
+  height: 293px;
+  position: fixed;
+  top: 14px;
+  right: 3px;
+  z-index: 1;
+  rotate: 17deg;
+}
+
+/* Filtering */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.filter-button-group button {
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  color: #328c5f;
+  background: #f1ffda;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin-right: 8px;
+  transition: background 0.3s;
+  position: fixed;
+  z-index: 2;
+}
+
+.filter-button-group button:hover {
+  background-color: #ffffff;
+}
+
+#all-filter{
+  top: 122px;
+  right: 51px;
+  padding: 7px;   
+}
+
+#red-filter {
+  background: #e6462d;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 220px;
+  right: 90px;
+}
+
+#red-filter:hover {
+  background: #ff7a65;
+}
+
+#orange-filter {
+  background: #f68655;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 195px;
+  right: 140px;
+}
+
+#orange-filter:hover {
+  background: #ffb392;
+}
+
+#yellow-filter {
+  background: #e4d444;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 145px;
+  right: 170px;
+}
+
+#yellow-filter:hover {
+  background: #fff383;
+}
+
+#green-filter {
+  background: #99ce60;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 84px;
+  right: 163px;
+}
+
+#green-filter:hover {
+  background: #b4e39d;
+}
+
+#blue-filter {
+  background: #669dce;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 47px;
+  right: 114px;
+}
+
+#blue-filter:hover {
+  background: #7dc2e7;
+}
+
+#purple-filter {
+  background: #8e77cf;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 65px;
+  right: 60px;
+}
+
+#purple-filter:hover {
+  background: #c18be7;
+}
+
+/* About Page */
+.about-overlay {
+  visibility: hidden;
+  position: absolute;
+  background: #75d17f;
+  width: 50vw;
+  height: 50vh;
+  left: 25%;
+  top: 25%;
+}
+
+.about-overlay.active {
+  visibility: visible;
+  text-align: center;
+}
+
+.about-content {
+  visibility: hidden;
+  font-family: bilo, Verdana, sans-serif;
+  color: #328c5f;
+}
+
+.about-content.active {
+  visibility: visible;
+}
+
+.about-button {
+  background: none;
+  border: none;
+  background: #75d17f;
+  color: #f3ff74;
+  padding: 10px;
+  border-radius: 0px;
+  font-size: 30px;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  font-weight: bolder;
+  transition: 0.3s;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.about-button:hover {
+  background-color: #328c5f;
+}
+
+.close {
+  background: none;
+  border: none;
+  background: #f3ff74;
+  color: #328c5f;
+  padding: 10px;
+  border-radius: 0px;
+  font-size: 20px;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  font-weight: bolder;
+}

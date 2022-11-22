@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Draft 1</title>
+  <!-- CSS Styling -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Adobe Fonts Link -->
+  <link rel="stylesheet" href="https://use.typekit.net/zva5ato.css">
+</head>
+
+<body>
+
+  <!-- Start introduction overlay -->
+  <div class="introduction">
+    <h1>WELCOME!</h1>
+    <p>Explore Impressionism and Post-Impressionism in a whole new way through this interactive colour analysis
+      experience.</p>
+    <button class="get-started">ENTER</button>
+  </div>
+  <!-- End introduction overlay -->
+
+  <div class="container">
+    <div class="filters">
+      <!-- Start group of filter buttons -->
+      <div class="filter-button-group">
+        <button data-filter="*" id="all-filter">All</button>
+        <button data-filter=".filter-1" id="red-filter"></button>
+        <button data-filter=".filter-2" id="orange-filter"></button>
+        <button data-filter=".filter-3" id="yellow-filter"></button>
+        <button data-filter=".filter-4" id="green-filter"></button>
+        <button data-filter=".filter-5" id="blue-filter"></button>
+        <button data-filter=".filter-6" id="purple-filter"></button>
+      </div>
+      <!-- End group of filter buttons -->
+    </div>
+
+  <!-- Paint palette -->
+  <div class="paint-palette">
+    <img src="img/paint palette.png" class="palette-image" alt="">
+  </div>
+
+    <div class="grid" class="div1" id="div1">
+      <!-- Start Filter Category 1 -->
+      <div class="grid-item filter-1">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-1">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-1">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <!-- End Filter Category 1 -->
+
+      <!-- Start Filter Category 2 -->
+      <div class="grid-item filter-2">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-2">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-2">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <!-- End Filter Category 2 -->
+
+      <!-- Start Filter Category 3 -->
+      <div class="grid-item filter-3">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-3">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-3">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <!-- End Filter Category 3 -->
+      
+      <!-- Start Filter Category 4 -->
+      <div class="grid-item filter-4">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-4">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-4">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <!-- End Filter Category 4 -->
+      
+      <!-- Start Filter Category 5 -->
+      <div class="grid-item filter-5">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-5">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-5">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <!-- End Filter Category 5 -->
+      
+      <!-- Start Filter Category 6 -->
+      <div class="grid-item filter-6">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-6">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div class="grid-item filter-6">
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <!-- End Filter Category 6 -->
+      </div>
+  </div>
+
+
+<!--About content-->
+<div class="about-overlay">
+  <div class="about-content">
+    <h2>About</h2>
+    <p> add text</p>
+    <!--popup's close button-->
+    <button class="close">CLOSE</button> </div>
+</div>
+<!--About button-->
+<button class="about-button">ABOUT</button>
+
+  <!-- Load jQuery, a JavaScript library to make JavaScript more readable and easier to use -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- Load Isoptope, a filter and sorting JavaScript library -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- Load relative JavaScript file -->
+  <script src="index.js"></script>
+
+</body>
+
+</html>
